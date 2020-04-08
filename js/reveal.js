@@ -98,10 +98,10 @@
 
 			// Add the current slide number to the URL hash so that reloading the
 			// page/copying the URL will return you to the same slide
-			hash: false,
+			hash: true,
 
 			// Push each slide change to the browser history.  Implies `hash: true`
-			history: false,
+			history: true,
 
 			// Enable keyboard shortcuts for navigation
 			keyboard: true,
@@ -162,7 +162,7 @@
 
 			// Flags whether to include the current fragment in the URL,
 			// so that reloading brings you to the same fragment position
-			fragmentInURL: false,
+			fragmentInURL: true,
 
 			// Flags if the presentation is running in an embedded mode,
 			// i.e. contained within a limited portion of the screen

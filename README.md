@@ -1,105 +1,51 @@
-# reveal.js ![tests](https://github.com/hakimel/reveal.js/workflows/tests/badge.svg) <a href="https://slides.com?ref=github"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
+# Zennify Lunch n Learn: How the Web Works
 
-A framework for easily creating beautiful presentations using HTML. [Check out the live demo](https://revealjs.com/).
+## Slide Presentation Set Up
 
-reveal.js comes with a broad range of features including [nested slides](https://github.com/hakimel/reveal.js#markup), [Markdown support](https://github.com/hakimel/reveal.js#markdown), [PDF export](https://github.com/hakimel/reveal.js#pdf-export), [speaker notes](https://github.com/hakimel/reveal.js#speaker-notes) and a [JavaScript API](https://github.com/hakimel/reveal.js#api). There's also a fully featured visual editor and platform for sharing reveal.js presentations at [slides.com](https://slides.com?ref=github).
+RevealJS is a framework for easily creating beautiful presentations using HTML. [Check out the live demo](https://revealjs.com/).
+To add slides for a topic, modify the appropriate markdown file in the `sections` folder:
+- How the Web Works (`sections/how-the-web-works.md`)
+- How the App Works: Overview of Model-View-Controller (MVC) Architecture and the Front End Development (`sections/how-the-app-works-pt1.md`)
+- How the App Works: Overview of Back End, Data and APIs (`sections/how-the-app-works-pt2.md`)
 
-### Supporting reveal.js
-This project was started and is maintained by [@hakimel](https://github.com/hakimel/) with the help of many [contributions from the community](https://github.com/hakimel/reveal.js/graphs/contributors). The best way to support the project is to [become a paying member of Slides.com](https://slides.com/pricing)—the reveal.js presentation platform that Hakim is building.
+### Table of contents
 
-
-## Table of contents
-
-- [Online Editor](#online-editor)
 - [Installation](#installation)
-  - [Basic setup](#basic-setup)
-  - [Full setup](#full-setup)
+  - [Setup](#setup)
   - [Folder Structure](#folder-structure)
-- [Instructions](#instructions)
+  - [Configuration](#configuration)
+  - [Dependencies](#dependencies)
+  - [Keyboard Bindings](#keyboard-bindings)
+- [Usage Instructions](#usage-instructions)
+  - [Slide Navigation](#slide-navigation)
   - [Markup](#markup)
   - [Markdown](#markdown)
   - [Element Attributes](#element-attributes)
   - [Slide Attributes](#slide-attributes)
-- [Configuration](#configuration)
-- [Presentation Size](#presentation-size)
-- [Dependencies](#dependencies)
-- [Ready Event](#ready-event)
-- [Auto-sliding](#auto-sliding)
-- [Keyboard Bindings](#keyboard-bindings)
-- [Vertical Slide Navigation](#vertical-slide-navigation)
-- [Touch Navigation](#touch-navigation)
+  - [Fragments](#fragments)
+  - [Code syntax highlighting](#code-syntax-highlighting)
 - [Lazy Loading](#lazy-loading)
 - [API](#api)
-  - [Custom Key Bindings](#custom-key-bindings)
   - [Slide Changed Event](#slide-changed-event)
-  - [Presentation State](#presentation-state)
-  - [Slide States](#slide-states)
-  - [Slide Backgrounds](#slide-backgrounds)
-  - [Parallax Background](#parallax-background)
-  - [Slide Transitions](#slide-transitions)
-  - [Internal links](#internal-links)
-  - [Fragments](#fragments)
-  - [Fragment events](#fragment-events)
-  - [Code syntax highlighting](#code-syntax-highlighting)
-  - [Slide number](#slide-number)
-  - [Overview mode](#overview-mode)
-  - [Fullscreen mode](#fullscreen-mode)
-  - [Embedded media](#embedded-media)
-  - [Stretching elements](#stretching-elements)
-  - [Resize Event](#resize-event)
-  - [postMessage API](#postmessage-api)
-- [PDF Export](#pdf-export)
 - [Theming](#theming)
-- [Speaker Notes](#speaker-notes)
-  - [Share and Print Speaker Notes](#share-and-print-speaker-notes)
-  - [Server Side Speaker Notes](#server-side-speaker-notes)
 - [Plugins](#plugins)
-- [Multiplexing](#multiplexing)
-  - [Master presentation](#master-presentation)
-  - [Client presentation](#client-presentation)
-  - [Socket.io server](#socketio-server)
-- [MathJax](#mathjax)
-- [License](#license)
 
-#### More reading
+#### Setup
 
-- [Changelog](https://github.com/hakimel/reveal.js/releases): Up-to-date version history.
-- [Examples](https://github.com/hakimel/reveal.js/wiki/Example-Presentations): Presentations created with reveal.js, add your own!
-- [Browser Support](https://github.com/hakimel/reveal.js/wiki/Browser-Support): Explanation of browser support and fallbacks.
-- [Plugins](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware): A list of plugins that can be used to extend reveal.js.
-
-
-## Online Editor
-
-Presentations are written using HTML or Markdown but there's also an online editor for those of you who prefer a graphical interface. Give it a try at [https://slides.com](https://slides.com?ref=github).
-
-
-## Installation
-
-The **basic setup** is for authoring presentations only. The **full setup** gives you access to all reveal.js features and plugins such as speaker notes as well as the development tasks needed to make changes to the source.
-
-### Basic setup
-
-The core of reveal.js is very easy to install. You'll simply need to download a copy of this repository and open the index.html file directly in your browser.
-
-1. Download the latest version of reveal.js from <https://github.com/hakimel/reveal.js/releases>
-2. Unzip and replace the example contents in index.html with your own
-3. Open index.html in a browser to view it
-
-### Full setup
+Open `index.html` in a browser to view it.
 
 Some reveal.js features, like external Markdown and speaker notes, require that presentations run from a local web server. The following instructions will set up such a server as well as all of the development tasks needed to make edits to the reveal.js source code.
 
 1. Install [Node.js](https://nodejs.org/) (9.0.0 or later)
 
-1. Clone the reveal.js repository
+1. Clone the Zennify LNL "How the Web Works" repository
    ```sh
-   $ git clone https://github.com/hakimel/reveal.js.git
+   $ git clone https://github.com/Zennify/zennify-lnl-how-the-web-works.git
    ```
 
-1. Navigate to the reveal.js folder
+1. Navigate to the How the Web Works folder
    ```sh
-   $ cd reveal.js
+   $ cd zennify-lnl-how-the-web-works
    ```
 
 1. Install dependencies
